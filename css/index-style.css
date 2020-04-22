@@ -1,0 +1,76 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+    border-bottom: 1.4px solid #AAAAAA;
+}
+.header h2{
+    color: #AAAAAA;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.myBody{
+    background-color: #EEEEEE;
+    color: black;
+    text-align: center;
+    padding: 50px 100px;
+}
+.myBody h5 , .myBody input {
+    margin-bottom: 20px;
+}
+.test{
+    border: 1px solid red;
+}
+.data{
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition:  0.7s all;
+}
+.data:hover{
+    background-color: blueviolet;
+}
+.data h2{
+    margin-right: 100px;
+}
+.data button i{
+    padding: 5px;
+}
+.warning{
+    color:  red;
+    background-color: #FFB2B2;
+    font-weight: bold;
+}
+#messageBox{
+    visibility: hidden;
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    width: 40%;
+    margin: auto;
+    position: fixed;
+    bottom: 15%;
+    left: -50%;
+    right: -50%;
+    z-index: 1;
+}
+#messageBox.show{
+    visibility: visible;
+    animation: toastMessageIn 0.5s ,toastMessageOut 0.5s 3.5s;
+}
+@keyframes toastMessageIn{
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 15%; opacity: 1;}
+}
+@keyframes toastMessageOut{
+    from {bottom: 15%; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+.footer{
+    border-top: 1.4px solid #AAAAAA;
+}
+.footer p{
+    color: #AAAAAA;
+}
